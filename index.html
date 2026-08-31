@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cartão Digital - Emerson Amaral</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family:
+          system-ui,
+          -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          sans-serif;
+      }
+
+      body {
+        background: #0f172a;
+        color: #e5e7eb;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        min-height: 100vh;
+        padding: 16px;
+      }
+
+      .card {
+        background: #020617;
+        border-radius: 16px;
+        max-width: 420px;
+        width: 100%;
+        padding: 20px;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+      }
+
+      .card-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+        margin-bottom: 16px;
+      }
+
+      .perfil-foto {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 2px solid #38bdf8;
+        margin-bottom: 4px;
+      }
+
+      .card-header h1 {
+        font-size: 1.4rem;
+        font-weight: 600;
+      }
+
+      .card-header p {
+        font-size: 0.95rem;
+        color: #9ca3af;
+      }
+
+      .card-body > p {
+        font-size: 0.95rem;
+        margin-bottom: 16px;
+        color: #d1d5db;
+        text-align: center;
+        line-height: 1.5;
+      }
+
+      .card-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        justify-content: center;
+        margin-bottom: 16px;
+      }
+
+      .btn {
+        display: inline-block;
+        padding: 8px 12px;
+        border-radius: 999px;
+        font-size: 0.85rem;
+        text-decoration: none;
+        color: #e5e7eb;
+        border: 1px solid #334155;
+        transition:
+          background 0.2s,
+          transform 0.1s;
+      }
+
+      .btn:hover {
+        background: #1e293b;
+        transform: translateY(-1px);
+      }
+
+      .whatsapp {
+        background: #22c55e;
+        border-color: #22c55e;
+        color: #022c22;
+      }
+
+      .portfolio {
+        background: #0ea5e9;
+        border-color: #0ea5e9;
+        color: #ffffff;
+      }
+
+      .linkedin {
+        background: #2563eb;
+        border-color: #2563eb;
+      }
+
+      .github {
+        background: #111827;
+        border-color: #111827;
+      }
+
+      .qr-code-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 6px;
+        margin-bottom: 16px;
+      }
+
+      .qr-code {
+        width: 120px;
+        height: 120px;
+        border-radius: 8px;
+        border: 2px solid #334155;
+        background: #fff;
+        padding: 4px;
+      }
+
+      .qr-label {
+        font-size: 0.8rem;
+        color: #9ca3af;
+      }
+
+      .card-info {
+        font-size: 0.85rem;
+        color: #9ca3af;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+      }
+
+      @media (min-width: 600px) {
+        .card {
+          padding: 24px;
+        }
+
+        .perfil-foto {
+          width: 140px;
+          height: 140px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="card-header">
+        <img
+          src="assets/images/Emerson.logo.png"
+          alt="Foto de Emerson Amaral"
+          class="perfil-foto"
+        />
+        <h1>Emerson Amaral</h1>
+        <p>Desenvolvedor Full Stack Automação e Inteligência Artificial</p>
+      </div>
+
+      <div class="card-body">
+        <p>
+          Crio soluções web completas, do backend ao frontend, com foco em
+          performance e boas práticas
+        </p>
+
+        <p>Integrações com automação e Ia</p>
+        <div class="card-actions">
+          <a
+            href="https://wa.me/5511985988147"
+            class="btn whatsapp"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Fale comigo no WhatsApp
+          </a>
+
+          <a
+            href="https://emerson-amaralprofile.netlify.app/"
+            class="btn portfolio"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Ver portfólio
+          </a>
+
+          <a
+            href="SEU_LINK_LINKEDIN"
+            class="btn linkedin"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            LinkedIn
+          </a>
+
+          <a
+            href="https://github.com/emerson-code-200/Emerson034"
+            class="btn github"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub
+          </a>
+        </div>
+
+        <div class="qr-code-container">
+          <img
+            src="https://api.qrserver.com/v1/create-qr-code/?size=120x120&data=https://wa.me/5511985988147"
+            alt="QR Code WhatsApp"
+            class="qr-code"
+          />
+          <p class="qr-label">Escaneie para WhatsApp</p>
+        </div>
+
+        <div class="card-info">
+          <p>📞 (11) 98598-8147</p>
+          <p>✉ emersonamaral04@gmail.com</p>
+          <p>📍 São Paulo - SP</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

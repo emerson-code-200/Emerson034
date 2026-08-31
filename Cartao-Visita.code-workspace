@@ -1,0 +1,12 @@
+{
+  "folders": [
+	{
+		"name": "Cartao-Visita",
+		"path": "."
+	}
+],
+  "settings": {
+    "liveServer.settings.port": 5501,
+    "workbench.editor.languageDetection": true
+  }
+}
