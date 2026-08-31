@@ -1,64 +1,71 @@
-# Cartão de Visita Digital
+# Portfólio Emerson
 
-Cartão de visita digital pessoal para **Emerson Amaral**, desenvolvedor Full Stack com foco em automação e inteligência artificial.
+Portfólio pessoal de desenvolvedor Full Stack com identidade visual brutalist/technical.
 
-## Visão Geral
+## Design
 
-Este projeto é um cartão de visita digital responsivo e moderno, projetado para ser compartilhado facilmente via link ou QR Code. O design segue uma estética minimalista e escura, com elementos interativos e links para redes sociais.
+Identidade visual afiada com paleta **acid green + signal orange**, geometria quadrada (0-4px radius) e animações fluidas. Sem clichês de AI (sem purple, sem glassmorphism, sem bento grids).
+
+## Tecnologias
+
+- HTML5 (estrutura semântica)
+- CSS3 (variáveis CSS, animações, grid, flexbox)
+- JavaScript (ES6+, Canvas API, Intersection Observer)
+- Express.js (servidor local)
+
+## Cores
+
+| Cor        | Código    | Uso                       |
+| ---------- | --------- | ------------------------- |
+| Background | `#0a0a0b` | Fundo principal           |
+| Primary    | `#b4f72e` | Acid green - destaque     |
+| Secondary  | `#ff4d2d` | Signal orange - contraste |
+| Text       | `#f0f0f0` | Texto principal           |
 
 ## Funcionalidades
 
-- Design responsivo para dispositivos móveis e desktop
-- Botões de contato direto (WhatsApp, portfólio, LinkedIn, GitHub)
-- QR Code gerado automaticamente para contato via WhatsApp
-- Informações de contato integradas (telefone, email, localização)
-- Tema escuro com possibilidade de alternância (em desenvolvimento)
+- Header sticky com fundo sólido
+- Menu mobile com hamburger animation
+- Scroll reveal animations (staggered)
+- Partículas interativas com Canvas (acid green + orange)
+- Micro-interactions nos cards (hover glow)
+- Botões com inversão de cores
+- Scroll progress bar com glow
+- Loading screen
+- Formulário com validação
+- Social links com SVG icons
+- Favicon e Open Graph meta tags
+- Lazy loading em imagens
 
-## Tecnologias Utilizadas
+## Como Rodar
 
-- HTML5
-- CSS3 (com design responsivo)
-- JavaScript vanilla
+```bash
+npm install
+npm start
+```
 
-## Estrutura do Projeto
+Acesse: http://localhost:3000
+
+## Estrutura
 
 ```
-Cartao-Visita/
-├── index.html          # Página principal do cartão de visita
-├── main.js             # Lógica de alternância de tema
+├── index.html          # Página principal
+├── server.js           # Servidor Express
+├── package.json        # Dependências
+├── css/
+│   └── styles.css      # Estilos e tema
+├── js/
+│   └── main.js         # Lógica principal
 ├── assets/
-│   └── images/
-│       └── Emerson.logo.png  # Foto de perfil
-└── Cartao-Visita.code-workspace  # Configuração do VS Code
+│   └── images/         # Imagens
+└── docs/
+    └── PLAN.md         # Documentação
 ```
 
-## Como Usar
+## Design Decisions
 
-1. Abra o arquivo `index.html` em qualquer navegador moderno
-2. Para compartilhar, use o link ou escaneie o QR Code exibido na página
-3. Clique nos botões para acessar os perfis sociais ou entrar em contato
-
-## Personalização
-
-Para personalizar o cartão com suas próprias informações:
-
-1. Edite o arquivo `index.html` substituindo:
-   - Nome e cargo no cabeçalho
-   - Descrição pessoal
-   - Links das redes sociais
-   - Informações de contato (telefone, email, localização)
-2. Substitua a imagem de perfil em `assets/images/`
-3. O QR Code será automaticamente atualizado com o novo número de WhatsApp
-
-## Autor
-
-**Emerson Amaral**
-
-- Email: emersonamaral04@gmail.com
-- WhatsApp: (11) 98598-8147
-- GitHub: [emerson-code-200/Emerson034](https://github.com/emerson-code-200/Emerson034)
-- Localização: São Paulo - SP
-
-## Licença
-
-Este projeto é de uso pessoal.
+- **Sem glassmorphism** - Fundos sólidos com bordas visíveis
+- **Sem purple/lavender** - Paleta acid green + orange
+- **Geometria afiada** - Border-radius 0-4px
+- **Animações fluidas** - cubic-bezier easing
+- **Social links com SVG** - Ícones reais

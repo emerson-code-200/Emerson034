@@ -3,239 +3,586 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cartão Digital - Emerson Amaral</title>
+    <meta
+      name="description"
+      content="Portfólio de Emerson Amaral, desenvolvedor full stack com foco em freelas, produtos e serviços digitais."
+    />
+    <meta name="author" content="Emerson Amaral" />
+    <meta property="og:title" content="Emerson Amaral | Full Stack Developer" />
+    <meta
+      property="og:description"
+      content="Desenvolvimento de sites, sistemas web e soluções digitais com foco em performance, clareza e resultado real."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="./assets/images/Emerson.logo.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="theme-color" content="#0a0a0b" />
+    <link rel="icon" type="image/jpeg" href="./assets/images/EAlogo.jpg" />
+    <title>Emerson Amaral | Full Stack Developer</title>
 
-    <style>
-      * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-        font-family:
-          system-ui,
-          -apple-system,
-          BlinkMacSystemFont,
-          "Segoe UI",
-          sans-serif;
-      }
-
-      body {
-        background: #0f172a;
-        color: #e5e7eb;
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-        min-height: 100vh;
-        padding: 16px;
-      }
-
-      .card {
-        background: #020617;
-        border-radius: 16px;
-        max-width: 420px;
-        width: 100%;
-        padding: 20px;
-        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
-      }
-
-      .card-header {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        gap: 10px;
-        margin-bottom: 16px;
-      }
-
-      .perfil-foto {
-        width: 120px;
-        height: 120px;
-        border-radius: 50%;
-        object-fit: cover;
-        border: 2px solid #38bdf8;
-        margin-bottom: 4px;
-      }
-
-      .card-header h1 {
-        font-size: 1.4rem;
-        font-weight: 600;
-      }
-
-      .card-header p {
-        font-size: 0.95rem;
-        color: #9ca3af;
-      }
-
-      .card-body > p {
-        font-size: 0.95rem;
-        margin-bottom: 16px;
-        color: #d1d5db;
-        text-align: center;
-        line-height: 1.5;
-      }
-
-      .card-actions {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 8px;
-        justify-content: center;
-        margin-bottom: 16px;
-      }
-
-      .btn {
-        display: inline-block;
-        padding: 8px 12px;
-        border-radius: 999px;
-        font-size: 0.85rem;
-        text-decoration: none;
-        color: #e5e7eb;
-        border: 1px solid #334155;
-        transition:
-          background 0.2s,
-          transform 0.1s;
-      }
-
-      .btn:hover {
-        background: #1e293b;
-        transform: translateY(-1px);
-      }
-
-      .whatsapp {
-        background: #22c55e;
-        border-color: #22c55e;
-        color: #022c22;
-      }
-
-      .portfolio {
-        background: #0ea5e9;
-        border-color: #0ea5e9;
-        color: #ffffff;
-      }
-
-      .linkedin {
-        background: #2563eb;
-        border-color: #2563eb;
-      }
-
-      .github {
-        background: #111827;
-        border-color: #111827;
-      }
-
-      .qr-code-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 6px;
-        margin-bottom: 16px;
-      }
-
-      .qr-code {
-        width: 120px;
-        height: 120px;
-        border-radius: 8px;
-        border: 2px solid #334155;
-        background: #fff;
-        padding: 4px;
-      }
-
-      .qr-label {
-        font-size: 0.8rem;
-        color: #9ca3af;
-      }
-
-      .card-info {
-        font-size: 0.85rem;
-        color: #9ca3af;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        gap: 4px;
-      }
-
-      @media (min-width: 600px) {
-        .card {
-          padding: 24px;
-        }
-
-        .perfil-foto {
-          width: 140px;
-          height: 140px;
-        }
-      }
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Sora:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <div class="card">
-      <div class="card-header">
-        <img
-          src="assets/images/Emerson.logo.png"
-          alt="Foto de Emerson Amaral"
-          class="perfil-foto"
-        />
-        <h1>Emerson Amaral</h1>
-        <p>Desenvolvedor Full Stack Automação e Inteligência Artificial</p>
-      </div>
+    <div class="scroll-progress" id="scrollProgress"></div>
 
-      <div class="card-body">
-        <p>
-          Crio soluções web completas, do backend ao frontend, com foco em
-          performance e boas práticas
-        </p>
-
-        <p>Integrações com automação e Ia</p>
-        <div class="card-actions">
-          <a
-            href="https://wa.me/5511985988147"
-            class="btn whatsapp"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Fale comigo no WhatsApp
-          </a>
-
-          <a
-            href="https://emerson-amaralprofile.netlify.app/"
-            class="btn portfolio"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Ver portfólio
-          </a>
-
-          <a
-            href="SEU_LINK_LINKEDIN"
-            class="btn linkedin"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            LinkedIn
-          </a>
-
-          <a
-            href="https://github.com/emerson-code-200/Emerson034"
-            class="btn github"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            GitHub
-          </a>
-        </div>
-
-        <div class="qr-code-container">
+    <header class="header" id="nav">
+      <div class="container nav__container">
+        <div class="nav-brand">
           <img
-            src="https://api.qrserver.com/v1/create-qr-code/?size=120x120&data=https://wa.me/5511985988147"
-            alt="QR Code WhatsApp"
-            class="qr-code"
+            src="./assets/images/EAlogo.jpg"
+            alt="Emerson Amaral"
+            class="nav-logo-img"
+            loading="lazy"
           />
-          <p class="qr-label">Escaneie para WhatsApp</p>
+          <div class="nav__logo">
+            <strong>Emerson Amaral</strong>
+            <span>Full Stack Developer</span>
+          </div>
         </div>
 
-        <div class="card-info">
-          <p>📞 (11) 98598-8147</p>
-          <p>✉ emersonamaral04@gmail.com</p>
-          <p>📍 São Paulo - SP</p>
+        <button class="nav__toggle" id="navToggle" aria-label="Abrir menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <ul class="nav__menu" id="navMenu">
+          <li><a href="#inicio" class="nav-link active">Início</a></li>
+          <li><a href="#sobre" class="nav-link">Sobre</a></li>
+          <li><a href="#servicos" class="nav-link">Serviços</a></li>
+          <li><a href="#projetos" class="nav-link">Projetos</a></li>
+          <li><a href="#processos" class="nav-link">Processos</a></li>
+          <li><a href="#contato" class="nav-link">Contato</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <section id="inicio" class="hero">
+        <canvas id="particles-canvas"></canvas>
+        <div class="container">
+          <div class="hero-content reveal">
+            <div class="hero-badge">
+              <span class="hero-badge-dot"></span>
+              Emerson Amaral - Full Stack Developer • Produtos • Serviços • <br>
+              automações e Inteligencia Artificial.
+            </div>
+            <h1 class="hero-title">
+              Crio <span>sites</span>, sistemas web e soluções digitais sob
+              medida.
+            </h1>
+            <p class="hero-subtitle">
+              Desenvolvo produtos e serviços digitais com foco em performance,
+              clareza, boa experiência de uso e resultado real para empresas,
+              profissionais e projetos próprios.
+            </p>
+            <div class="hero-buttons">
+              <a href="#projetos" class="btn btn--primary">Ver projetos</a>
+              <a href="#contato" class="btn btn-secondary"
+                >Solicitar orçamento</a
+              >
+            </div>
+          </div>
+
+          <div class="hero-image-wrapper reveal">
+            <div class="foto-perfil">
+              <img
+                src="/assets/images/Emerson.logo.png"
+                alt="Emerson Amaral"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="sobre" class="section sobre">
+        <div class="container">
+          <div class="section-header reveal">
+            <div class="section-label">
+              <span class="hero-badge-dot"></span>
+              Sobre
+            </div>
+            <h2 class="section-title">
+              Desenvolvimento com visão de produto e negócio
+            </h2>
+            <p class="section-description">
+              Atuo de forma equilibrada entre frontend e backend, transformando
+              ideias em soluções digitais funcionais, organizadas e preparadas
+              para evoluir. Meu foco é entregar algo útil, estável e alinhado ao
+              objetivo real do projeto.
+            </p>
+          </div>
+
+          <div class="sobre-grid">
+            <div class="sobre-info reveal">
+              <h3>Como penso</h3>
+              <p class="sobre-filosofia">
+                Antes de desenvolver, procuro entender o problema, o contexto e
+                o resultado esperado. Isso ajuda a construir soluções mais
+                claras e mais valiosas para quem vai usar.
+              </p>
+              <h3>Como entrego</h3>
+              <p class="sobre-filosofia">
+                Trabalho com interface, backend, banco de dados, integrações e
+                estrutura geral da aplicação para que o projeto faça sentido do
+                início ao fim.
+              </p>
+              <div class="skills-grid">
+                <span class="skill-item">Frontend</span>
+                <span class="skill-item">Backend</span>
+                <span class="skill-item">APIs</span>
+                <span class="skill-item">Banco de dados</span>
+                <span class="skill-item">Deploy</span>
+              </div>
+            </div>
+
+            <div class="timeline reveal">
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-year">2020 - Presente</div>
+                <div class="timeline-title">
+                  Desenvolvedor Full Stack Freelancer
+                </div>
+                <p class="timeline-text">
+                  Desenvolvimento de sites, sistemas web e soluções digitais
+                  para empresas e projetos próprios.
+                </p>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-year">2018 - 2020</div>
+                <div class="timeline-title">Desenvolvedor Frontend</div>
+                <p class="timeline-text">
+                  Foco em interfaces modernas, responsivas e experiência do
+                  usuário.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="servicos" class="section">
+        <div class="container">
+          <div class="section-header reveal">
+            <div class="section-label">
+              <span class="hero-badge-dot"></span>
+              Serviços
+            </div>
+            <h2 class="section-title">O que você pode contratar</h2>
+            <p class="section-description">
+              Organizei os serviços para comunicar com clareza o que posso
+              desenvolver, desde presença digital até sistemas internos e
+              produtos com mais complexidade técnica.
+            </p>
+          </div>
+
+          <div class="services-grid">
+            <article class="service-card reveal">
+              <h3>Sites e landing pages</h3>
+              <p>
+                Páginas modernas, responsivas e focadas em apresentação
+                profissional, validação de oferta, geração de leads e
+                posicionamento digital.
+              </p>
+              <div class="service-meta">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
+            </article>
+
+            <article class="service-card reveal">
+              <h3>Sistemas web sob medida</h3>
+              <p>
+                Desenvolvimento de dashboards, cadastros, painéis e fluxos
+                digitais orientados à operação real do cliente, com organização
+                e escalabilidade.
+              </p>
+              <div class="service-meta">
+                <span>Node.js</span>
+                <span>Express</span>
+                <span>MongoDB</span>
+              </div>
+            </article> 
+
+            <article class="service-card reveal">
+              <h3>Integrações e automação</h3>
+              <p>
+                Conexão com APIs, automações e processos integrados para reduzir
+                tarefas manuais e aumentar eficiência no dia a dia.
+              </p>
+              <div class="service-meta">
+                <span>APIs REST</span>
+                <span>Automação</span>
+                <span>Backend</span>
+              </div>
+            </article>
+
+            <article class="service-card reveal">
+              <h3>Produtos digitais</h3>
+              <p>
+                Estruturação e desenvolvimento de MVPs, ferramentas próprias e
+                soluções com visão de crescimento, manutenção e evolução
+                contínua.
+              </p>
+              <div class="service-meta">
+                <span>MVP</span>
+                <span>Produto</span>
+                <span>Escalabilidade</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="projetos" class="section">
+        <div class="container">
+          <div class="section-header reveal">
+            <div class="section-label">
+              <span class="hero-badge-dot"></span>
+              Projetos
+            </div>
+            <h2 class="section-title">Cases que mostram capacidade real</h2>
+            <p class="section-description">
+              
+            </p>
+          </div>
+
+          <div class="projects-grid">
+            <article class="project-card reveal">
+<img
+                 src="./assets/images/dentflow.png"
+                 alt="clinica odontologica"
+               />
+              
+              <h3>DentFlow Pro</h3>
+              <p>
+                Sistema de gestão odontológica pensado para organizar processos,
+                centralizar dados e apoiar a rotina operacional com mais clareza
+                e controle.
+              </p>
+              
+              <div class="project-meta">
+                <span>Node.js</span>
+                <span>Express</span>
+                <span>MongoDB</span>
+                <span>API REST</span>
+              </div>
+<a href="/assets/images/dentflow/dashbord.png" class="btn btn-secondary btn-project">
+                 Ver Detalhes
+               </a>
+            </article>
+
+            <article class="project-card reveal">
+              <h3>Café com Cafuné</h3>
+              <img src="./assets/images/cafe.png" alt="" />
+              <p>
+                Landing page criada para a cafeteria Café com Cafuné, com
+                proposta visual aconchegante, layout responsivo e comunicação
+                voltada para apresentação da marca, produtos e experiência do
+                cliente.
+              </p>
+
+<div class="project-meta">
+                 <span> HTML</span>
+                 <span>CSS</span>
+                 <span>JavaScript</span>
+               </div>
+               <a href="#" class="btn btn-secondary btn-project">
+                 Ver Detalhes
+               </a>
+</article>
+             <article class="project-card reveal">
+              
+               <h3>Escola Futuro</h3>
+               <p>
+                 Site institucional moderno para uma escola privada de ensino
+                 fundamental e médio, com área para alunos, professores e
+                 responsáveis, incluindo calendário escolar, boletins online e
+                 comunicação institucional.
+               </p>
+<div class="project-meta">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>JavaScript</span>
+                  <span>PHP</span>
+                  <span>MySQL</span>
+                </div>
+                <a href="/case-studios/escola-futuro.html" class="btn btn-secondary btn-project">
+                  Ver Detalhes
+                </a>
+             </article>
+             <article class="project-card reveal">
+               <h3>Associação Profissional de Engenheiros</h3>
+               <p>
+                 Portal completo para associação de classe com área restrita
+                 para membros, sistema de pagamento de anuidades, agenda de
+                 eventos, biblioteca de normas técnicas e notícias institucionais.
+               </p>
+<div class="project-meta">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>JavaScript</span>
+                  <span>Node.js</span>
+                  <span>MongoDB</span>
+                </div>
+                <a href="/case-studios/associacao-engenheiros.html" class="btn btn-secondary btn-project">
+                  Ver Detalhes
+                </a>
+             </article>
+             <article class="project-card reveal">
+               <h3>Portal da Prefeitura Municipal</h3>
+               <p>
+                 Website institucional da prefeitura com transparência pública,
+                 serviços online para cidadãos, informações sobre saúde,
+                 educação e infraestrutura, além de canal de ouvidoria e
+                 participação popular.
+               </p>
+               <div class="project-meta">
+                 <span>HTML</span>
+                 <span>CSS</span>
+                 <span>JavaScript</span>
+                 <span>React</span>
+                 <span>Node.js</span>
+               </div>
+               <a href="/case-studios/prefeitura-municipal.html" class="btn btn-secondary" style="margin-top: 1rem">
+                Ver Detalhes
+               </a>
+             </article>
+             <article class="project-card reveal">
+               <h3>Clínica Vida Mais</h3>
+               <p>
+                 Site para clínica médica com agendamento online de consultas,
+                 área do paciente com acesso a exames e prontuários,
+                 informações sobre especialidades médicas e equipe de profissionais.
+               </p>
+               <div class="project-meta">
+                 <span>HTML</span>
+                 <span>CSS</span>
+                 <span>JavaScript</span>
+                 <span>Vue.js</span>
+                 <span>Firebase</span>
+               </div>
+
+               <a href="/case-studios/clinica-vida-mais.html" class="btn btn-secondary" style="margin-top: 1rem">
+                 Ver Detalhes
+               </a>
+            
+
+          
+            </div>
+            
+             </article>
+             <article class="project-card reveal">
+               <h3>Portfólio</h3>
+               <p>
+                 Portfólio com design moderno e responsivo, com área para
+                 exibir projetos, habilidades, experiência e informações de
+                 contato.
+               </p>
+               <div class="project-meta">
+                 <span>HTML</span>
+                 <span>CSS</span>
+                 <span>JavaScript</span>
+                 <span>Vue.js</span>
+                 <span>Firebase</span>
+                 <a href="/case-studios/portifolio.html" class="btn btn-secondary" style="margin-top: 1rem">
+                 Ver Detalhes
+               </a>
+               </div>
+               </article>
+            
+               <section id="servicos" class="section">
+        <div class="container">
+          <div class="section-header reveal">
+            <div class="section-label">
+              <span class="hero-badge-dot"></span>
+                Processos
+            </div>
+            <h2 class="section-title">Como eu trabalho</h2>
+            <p class="section-description">
+           Uma visão geral das etapas que guiam o desenvolvimento de
+projetos: desde o entendimento da ideia inicial até a entrega final,
+com entregas parciais, revisões e ajustes ao longo do caminho.
+            </p>
+          </div>
+
+          <div class="services-grid">
+            <article class="service-card reveal">
+              <h3>1. Briefing e entendimento do projeto</h3>
+              <p>
+                O ponto de partida: conversar sobre sua ideia, entender o
+objetivo, analisar o cenário atual e alinhar expectativas sobre o
+resultado final. A partir daqui definimos escopo, prioridades e
+caminho técnico.
+              </p>
+              <div class="service-meta">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
+            </article>
+
+            <article class="service-card reveal">
+              <h3>2. Planejamento e estratégia</h3>
+              <p>
+                Com base no briefing, organizo as etapas, defino tecnologias, documento arquitetura e crio um planejamento claro. Isso garante que o desenvolvimento seja focado, eficiente e alinhado ao que você precisa.
+              </p>
+              <div class="service-meta">
+                <span>Planejamento</span>
+                <span>Estratégia</span>
+                <span>Arquitetura</span>
+              </div>
+            </article> 
+
+            <article class="service-card reveal">
+              <h3>3. Desenvolvimento e entregas</h3>
+              <p>
+                Conexão com APIs, automações e processos integrados para reduzir
+                tarefas manuais e aumentar eficiência no dia a dia.
+              </p>
+              <div class="service-meta">
+                <span>APIs REST</span>
+                <span>Automação</span>
+                <span>Backend</span>
+              </div>
+            </article>
+
+            <article class="service-card reveal">
+              <h3>3. Manutenção e evolução</h3>
+              <p>
+                Manutenção de sistemas, correção de bugs, atualizações de segurança e implementação de novas funcionalidades para garantir que o projeto continue funcionando bem ao longo do tempo.
+              </p>
+              <div class="service-meta">
+                <span>Manutenção</span>
+                <span>Evolução</span>
+                <span>Suporte</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contato" class="section">
+        <div class="container">
+          <div class="section-header reveal">
+            <div class="section-label">
+              <span class="hero-badge-dot"></span>
+              Contato
+            </div>
+            <h2 class="section-title">Vamos conversar sobre seu projeto</h2>
+            <p class="section-description">
+              Preencha o formulário abaixo com suas informações e detalhes do projeto. Quanto mais detalhes você fornecer, melhor poderei entender suas necessidades e oferecer a melhor solução.
+            </p>
+          </div>
+
+          <div class="contato-content">
+            <div class="contato-info reveal">
+              <div class="contact-list">
+                <div class="info-item">
+                  <i>@</i>
+                  <span>emersonamaral04@gmail.com</span>
+                </div>
+                <div class="info-item">
+                  <i>W</i>
+                  <span>+55 11 98598-8147</span>
+                </div>
+                <div class="info-item">
+                  <i>#</i>
+                  <span>São Paulo - SP</span>
+                </div>
+              </div>
+              <p class="contact-note">
+                
+              </p>
+            </div>
+
+            <form class="contato-form reveal" id="contactForm">
+              <div class="form-group">
+                <label for="name">Nome</label>
+                <input id="name" type="text" placeholder="Seu nome" required />
+              </div>
+
+              <div class="form-group">
+                <label for="email">E-mail</label>
+                <input
+                  id="email"
+                  type="email"
+                  placeholder="Seu e-mail"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="projectType">Tipo de projeto</label>
+                <select id="projectType">
+                  <option>Site institucional</option>
+                  <option>Loja virtual</option>
+                  <option>Sistema web</option>
+                  <option>Integração / automação</option>
+                  <option>Produto digital</option>
+                  <option>Inteligencia Artificial</option>
+                  <option>Consultoria</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Mensagem</label>
+                <textarea
+                  id="message"
+                  rows="6"
+                  placeholder="Descreva seu projeto"
+                  required
+                ></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-submit">
+                Enviar mensagem
+              </button>
+              <p id="formFeedback" class="form-feedback"></p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+<footer class="footer">
+       <div class="container">
+         <p><center> 2026 Emerson Amaral — Desenvolvedor Full Stack. Sites, sistemas web e automações sob medida</center></p>
+         <div class="footer-social">
+          <a href="#" class=" " aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"
+              />
+            </svg>
+          </a>
+          <a href="#" class="social-link" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+              />
+            </svg>
+          </a>
+          <a href="#" class="social-link" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"
+              />
+            </svg>
+          </a>
         </div>
       </div>
-    </div>
+    </footer>
+
+    <script src="./js/main.js"></script>
   </body>
 </html>
